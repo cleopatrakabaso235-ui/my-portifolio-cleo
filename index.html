@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Interactive Portfolio - ICT251</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>My Interactive Portfolio</h1>
+            <button id="theme-toggle-btn" class="btn">Switch Theme</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#learning">Learning Plan</a></li>
+                <li><a href="#projects">Projects & Skills</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro Hero Area -->
+        <section id="hero" class="hero-section">
+            <h2>Welcome to My Website</h2>
+            <p><strong>Name:</strong> Your Full Name | <strong>Programme:</strong> Bachelor of Science in Information Technology</p>
+            <p>Welcome to my interactive portfolio built for the ICT251 Web Technologies course at Mulungushi University.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated computer science student with a strong passion for software engineering, web development, and interactive technology. Over the course of my studies at Mulungushi University, I have acquired hands-on experience in building responsive frontend user interfaces, solving complex logic problems, and understanding modern software systems architecture. I look forward to using my technical knowledge to build impactful solutions.
+            </p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li><strong>Web Development:</strong> Crafting responsive, accessible user interfaces and experimenting with JavaScript frameworks.</li>
+                <li><strong>Chess & Strategy Games:</strong> Sharpening critical thinking and analytical problem-solving skills.</li>
+                <li><strong>Tech Blogging:</strong> Documenting my coding journey and writing tutorials on modern web engineering topics.</li>
+            </ul>
+        </section>
+
+        <!-- Learning Plan Section -->
+        <section id="learning">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Master HTML5 semantic layout principles and CSS Flexbox/Grid responsive design.</li>
+                <li>Strengthen JavaScript Fundamentals including DOM manipulation, event handlers, and data structures.</li>
+                <li>Deploy scalable frontend applications using modern web hosting platforms and version control systems.</li>
+            </ol>
+
+            <h3>Learning Tracker Schedule</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Module / Topic</th>
+                            <th>Target Hours</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5 & Semantic Markup</td>
+                            <td>10 Hours</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>CSS Grid & Media Queries</td>
+                            <td>15 Hours</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript Events & Validation</td>
+                            <td>20 Hours</td>
+                            <td>In Progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Projects & Skills Section -->
+        <section id="projects">
+            <h2>Projects & Skills</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>1. Semantic Web Layout</h3>
+                    <p>Structured accessible content utilizing semantic HTML5 tags and mobile-first layout rules.</p>
+                    <button class="toggle-details-btn btn">Show Details</button>
+                    <p class="project-details hidden">Built with strict WCAG accessibility guidelines, structured headings, and external CSS styling.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>2. Interactive Form Processing</h3>
+                    <p>Designed client-side validation logic using custom JavaScript event processing.</p>
+                    <button class="toggle-details-btn btn">Show Details</button>
+                    <p class="project-details hidden">Validates input patterns, eliminates trailing whitespaces, and renders live local responses without full-page reloads.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>3. Cloud Deployment Pipeline</h3>
+                    <p>Integrated continuous deployment mechanisms via Git repository connections to cloud hosts.</p>
+                    <button class="toggle-details-btn btn">Show Details</button>
+                    <p class="project-details hidden">Automated live website synchronization through Render upon pushing commits to the GitHub repository.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="videos/photo1.jpg" alt="Student working on web programming assignment at a computer workstation.">
+                    <figcaption>Working on interactive code labs in the university lab.</figcaption>
+                </figure>
+                <figure>
+                    <img src="videos/photo2.jpg" alt="University campus environment showing academic buildings.">
+                    <figcaption>Exploring campus grounds at Mulungushi University.</figcaption>
+                </figure>
+                <figure>
+                    <img src="videos/photo3.jpg" alt="Group collaboration session during technology workshop.">
+                    <figcaption>Collaborating with peers on modern technology projects.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>My Media</h2>
+
+            <article class="media-item">
+                <h3>Audio Introduction</h3>
+                <p><strong>Summary:</strong> A brief voice overview discussing personal milestones and course objectives.</p>
+                <audio controls>
+                    <source src="videos/audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+
+            <article class="media-item">
+                <h3>Project Demonstration Video</h3>
+                <p><strong>Summary:</strong> A recording demonstrating practical web application features and visual styling elements.</p>
+                <video controls width="100%">
+                    <source src="videos/video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </article>
+        </section>
+
+        <!-- Study Hours Calculator Section (JS Feature) -->
+        <section id="calculator">
+            <h2>Study Hours Calculator</h2>
+            <p>Calculate your target study hours for the academic week.</p>
+            <form id="study-calc-form">
+                <div class="form-group">
+                    <label for="hours-per-day">Planned Hours per Day:</label>
+                    <input type="number" id="hours-per-day" step="0.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="days-per-week">Days per Week (1 to 7):</label>
+                    <input type="number" id="days-per-week" min="1" max="7" required>
+                </div>
+                <button type="submit" class="btn">Calculate Weekly Hours</button>
+            </form>
+            <p id="calc-result" class="result-box"></p>
+        </section>
+
+        <!-- Contact Section (Compulsory JS Validation Feature) -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><em>Browser demonstration only &mdash; no message is sent.</em></p>
+            
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Full Name:</label>
+                    <input type="text" id="contact-name" name="name" required>
+                    <span id="name-error" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email Address:</label>
+                    <input type="email" id="contact-email" name="email" required>
+                    <span id="email-error" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Message:</label>
+                    <textarea id="contact-message" name="message" rows="4" required></textarea>
+                    <span id="message-error" class="error-msg"></span>
+                </div>
+
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+
+            <div id="form-preview" class="preview-box hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Name | ICT251 Web Technologies | Mulungushi University</p>
+        <p><a href="[https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name)" target="_blank" rel="noopener">View Source on GitHub</a></p>
+    </footer>
+
+</body>
+</html>
